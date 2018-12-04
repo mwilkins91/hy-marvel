@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:600');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Lato', sans-serif;
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #efefef;
+}
+
+header {
+  background-color: #f01716;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  padding: 0 50px;
+
+  p {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: left;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: -2.2px;
+    font-size: 35px;
+  }
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 812px) {
+  header {
+    flex-direction: column;
+    padding: 0 25px;
+
+    p {
+      margin-top: 0;
+    }
+  }
 }
