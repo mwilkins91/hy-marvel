@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import "./CharacterList.scss"; 
 
 class CharacterList extends Component {
