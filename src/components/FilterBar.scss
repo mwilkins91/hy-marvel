@@ -4,7 +4,7 @@
     right: 0;
     width: 100%;
     background-color: #c70f0e;
-    height: 45px;
+    min-height: 45px;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     display: flex;
@@ -43,5 +43,12 @@
             background-color: #444;
         }
     }
+}
 
+@media (max-width: 812px) {
+    .FilterBar__Component {
+        top: 100px;
+        justify-content: center;
+        padding: 0;
+    }
 }
