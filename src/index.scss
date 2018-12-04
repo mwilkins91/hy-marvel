@@ -15,9 +15,6 @@ code {
     monospace;
 }
 
-// font-family: 'Oswald', sans-serif;
-// font-family: 'Lato', sans-serif;
-
 body {
   font-family: 'Oswald', sans-serif;
   background-color: #efefef;
@@ -32,22 +29,21 @@ header {
   flex-direction: row;
   position: fixed;
   box-sizing: border-box;
+  height: 50px;
   top: 0;
   width: 100%;
   padding: 0 50px;
 
   p {
-    font-size: 18px;
-    font-style: italic;
+      font-size: 18px;
+      font-style: italic;
   }
 
   h1 {
-    margin: 0;
-    text-align: left;
-    padding: 5px;
-    text-transform: uppercase;
-    letter-spacing: -2.2px;
-    font-size: 35px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: -2.2px;
+      font-size: 35px;
   }
 }
 
