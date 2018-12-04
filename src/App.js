@@ -4,10 +4,23 @@ import Footer from './components/Footer';
 import './App.scss';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchQuery: ''
+    }
+  }
+
+  onFilterSubmit = (filters) => {
+    this.setState({ 
+      searchQuery: filters.searchQuery
+    })
+  }
+
   render() {
     return (
       <div className="App__Component">
-        <Header />
+        <Header onFilterSubmit={this.onFilterSubmit}/>
         <Footer />
       </div>
     );
