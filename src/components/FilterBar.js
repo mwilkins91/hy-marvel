@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./FilterBar.scss";
 
 class FilterBar extends Component {
-
 	constructor(props) {
 	  super(props);
 	  this.state = {
