@@ -3,12 +3,12 @@ import "./FilterBar.scss";
 
 class FilterBar extends Component {
 	render(){
-		return (<div className="FilterBar__Component">     
+		return (<div className="FilterBar__Component">
 			<form>
-			  <label>
+			  <label class="visually-hidden">
 			    Search Characters:
-			    <input type="text" />
 			  </label>
+			  <input type="text" placeholder="spider-man"/>
 			  <button type="submit">Submit</button>
 			</form>
 		</div>)

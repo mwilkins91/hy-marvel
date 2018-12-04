@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.scss';
 import FilterBar from './FilterBar';
 
 const Header = (props) => {
@@ -6,8 +7,7 @@ const Header = (props) => {
 		<h1>Marvel Comic Explorer</h1>
 		<p>Search and explore your favourite Marvel characters!</p>
 		<FilterBar />
-	</header>);	
-
+	</header>);
 };
 
 export default Header;
