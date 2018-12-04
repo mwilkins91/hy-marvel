@@ -8,6 +8,7 @@ class CharacterList extends Component {
 
     this.state = {
       characters: [],
+      offset: 0
     }
   }
 
@@ -20,7 +21,8 @@ class CharacterList extends Component {
       const charactersData = await axios.get(`https://gateway.marvel.com:443/v1/public/characters`, {
         params: {
           apikey: "7a9e90379097ff7a2c43f9ab74f30d24",
-          limit: 50
+          limit: 50,
+          offset: this.state.offset
         }
       });
 
@@ -32,6 +34,12 @@ class CharacterList extends Component {
     } catch (e) {
       this.setState({ err: e.message })
     } 
+  }
+
+  loadMore = () => {
+    this.setState({
+      offset: this.state.offset + 20
+    }, this.fetchCharacters)
   }
 
   renderCharacters() {
@@ -54,6 +62,7 @@ class CharacterList extends Component {
   	return (<section className="CharacterList__Component">
   		<h3>Characters List</h3>
       {this.state.characters.length ? this.renderCharacters() : this.renderEmptyState()}
+      <button onClick={this.loadMore}>Load More</button>
   	</section>)
   }
 };
