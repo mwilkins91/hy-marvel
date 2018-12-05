@@ -1,9 +1,7 @@
 # React Marvel App
 We are going to build a Marvel comic character explorer using the awesome [Marvel API](https://developer.marvel.com/)!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). <br>
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).<br>
-For more info on React, check out the [React documentation](https://reactjs.org/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started). For more info on React, check out the [React documentation](https://reactjs.org/).
 
 
 ## Getting Started
@@ -12,10 +10,16 @@ This repo is meant to be used in tandem with the in-class notes. We will be star
 
 The in-class tutorial will guide you through the steps to do this, but if you get lost at any point, this repo also provides branches at different checkpoints that you can check out to catch up.
 
+After cloning the repo, install project dependencies:
+```
+npm install
+```
+We will now make use of some of the scripts Creact React App provides us to get started.
+
 
 ## Scripts
 
-We will make use of some of the scripts Creact React App provides us to get started. In the root folder of your project directory, you can run:
+ In the root folder of your project directory, you can run:
 
 ### `npm start`
 
