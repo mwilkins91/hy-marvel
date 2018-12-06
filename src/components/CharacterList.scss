@@ -1,5 +1,6 @@
 .CharacterList__Component {
     margin-bottom: 50px;
+    padding: 100px 50px 10px 50px;
 
     button {
         height: 31.5px;
@@ -17,11 +18,7 @@
         }
     }
 
-    .character-list {
-        padding: 100px 50px 10px 50px;
-    }
-
-    .character-list > div {
+    .character-list  {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         overflow-y: scroll;
@@ -29,26 +26,26 @@
         border: 5px solid #888;
     }
 
-    .character-list > div div {
+    .character-card {
         padding: 15px;
         margin: 20px;
         background-color: #d8d8d8;
     }
 
     @media (max-width: 850px) {
-        .character-list > div {
+        .character-list {
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
 
     @media (max-width: 600px) {
-        .character-list > div {
+        .character-list {
             grid-template-columns: 1fr 1fr;
         }
     }
 
     @media (max-width: 450px) {
-        .character-list > div {
+        .character-list  {
             grid-template-columns: 1fr;
         }
     }

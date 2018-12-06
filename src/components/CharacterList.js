@@ -11,9 +11,8 @@ class CharacterList extends Component {
   }
 
   renderCharacters() {
-    return this.state.characters.map((character, index) => {
-      return (<div>Placeholder for character info</div>);
-    });
+    const characterList = [];
+    return (<div className="character-list">{characterList}</div>);
   }
 
   renderEmptyState(props) {
@@ -24,10 +23,8 @@ class CharacterList extends Component {
 
   render() {
   	return (<section className="CharacterList__Component">
-  		<div className="character-list">
-  		  <h3>Characters List</h3>
-  		  <div>{this.state.characters.length ? this.renderCharacters() : this.renderEmptyState()}</div>
-  		</div>
+  		<h3>Characters List</h3>
+      {this.state.characters.length ? this.renderCharacters() : this.renderEmptyState()}
   	</section>)
   }
 };
