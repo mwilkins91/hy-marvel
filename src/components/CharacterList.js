@@ -60,7 +60,7 @@ class CharacterList extends Component {
 
   render() {
   	return (<section className="CharacterList__Component">
-  		<h3>Characters List</h3>
+  		<h2>Characters List</h2>
       {this.state.characters.length ? this.renderCharacters() : this.renderEmptyState()}
       <button onClick={this.loadMore}>Load More</button>
   	</section>)
